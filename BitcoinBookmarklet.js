@@ -1,6 +1,6 @@
 javascript: (function () {
     while(true) {
-        setTimeout(function () {    
+        /*setTimeout(function () { */
             function Get(yourUrl) {
                 var Httpreq = new XMLHttpRequest();
                 Httpreq.open("GET",yourUrl,false);
@@ -13,8 +13,10 @@ javascript: (function () {
             var newTitle = "$" + json_obj.bpi.USD.rate_float + " || €" + json_obj.bpi.EUR.rate_float || Powered by CoinDesk;
             alert(newTitle);
             
+            /*
             var updateTitle = { 'title': newTitle };
             chrome.bookmarks.update(bookmarkBar.id, object, null);
-        }, 60000)
+            */
+        /*}, 60000)*/
     }
 })();;
